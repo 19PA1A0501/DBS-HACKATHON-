@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.maincontainer{
+    background-color: #D2ECF5;
+    height: 100vh;
+    width: 100%;
+}
+.navcontainer{
+    width: 80%;
+    height: 50px;
+ 
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navcontainer a{
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.navcontainer a:hover{
+    opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <br>
+        <div class="navcontainer">
+            <i class="fa fa-globe" style="font-size:48px;color:black"></i> 
+            <span class="title">DBS</span>
+            <a href="">Home</a>
+            <a href="">Book</a>
+            <a href="">Reschedule</a>
+            <a href="">Cancel</a>
+            <a href="">Previous bookings</a>
+        </div>
+        <h1>Welcome <%= data[0].name %></h1>
+    </div>
+
+</body>
+</html>
